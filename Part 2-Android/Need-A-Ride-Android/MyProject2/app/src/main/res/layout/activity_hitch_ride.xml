@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ucm.cis.android.myproject.HitchRideActivity"
+    android:background="#ffffe450">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_bar"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp">
+
+        <TextView
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:hint="Source"
+            android:text="Search Rides"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:layout_width="275dp"
+            android:layout_height="38dp"
+            android:background="#ffffff"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:hint="Source"
+            android:id="@+id/src"
+            android:layout_marginTop="14dp" />
+
+        <EditText
+            android:layout_width="275dp"
+            android:layout_height="38dp"
+            android:background="#ffffff"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:hint="Destination"
+            android:id="@+id/dst"
+            android:layout_marginTop="14dp" />
+
+        <EditText
+            android:layout_width="275dp"
+            android:layout_height="38dp"
+            android:background="#ffffff"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:focusable="false"
+            android:hint="Date"
+            android:id="@+id/dat"
+            android:layout_marginTop="14dp" />
+
+        <EditText
+            android:layout_width="275dp"
+            android:layout_height="38dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:hint="Time in HH:MM"
+            android:focusable="false"
+            android:background="#ffffff"
+            android:id="@+id/tme"
+            android:layout_marginTop="14dp" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Search Rides"
+        android:id="@+id/search_button"
+        android:layout_gravity="center"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/txtMsg"
+        android:layout_gravity="center"/>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchListRides"
+        android:layout_gravity="center"
+        android:layout_below="@+id/search_button"
+        android:layout_alignLeft="@+id/linearLayout"
+        android:layout_alignStart="@+id/linearLayout"
+        android:layout_alignRight="@+id/linearLayout"
+        android:layout_alignEnd="@+id/linearLayout"
+        android:background="#fffff8a1"
+        />
+
+</RelativeLayout>

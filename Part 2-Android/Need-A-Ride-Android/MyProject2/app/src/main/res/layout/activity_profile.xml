@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff319dff"
+    tools:context="com.ucm.cis.android.myproject.BrowseRideActivity">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/app_bar"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout2"
+        android:layout_marginTop="14dp">
+        <TextView
+            android:layout_width="220dp"
+            android:layout_height="38dp"
+            android:textSize="20sp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Profile"
+            android:textStyle="bold"
+            android:id="@+id/userName"
+            android:layout_marginTop="14dp" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="220dp"
+        android:layout_height="38dp"
+        android:textSize="20sp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Offers"
+        android:id="@+id/ofrlbl"
+        android:textStyle="bold"
+        android:layout_below="@+id/linearLayout2"
+        />
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/myOffer"
+        android:layout_below="@+id/ofrlbl"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:layout_width="220dp"
+        android:layout_height="38dp"
+        android:textSize="20sp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Requests"
+        android:id="@+id/reqlbl"
+        android:textStyle="bold"
+        android:layout_below="@+id/myOffer"/>
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/myRides"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/reqlbl" />
+</RelativeLayout>

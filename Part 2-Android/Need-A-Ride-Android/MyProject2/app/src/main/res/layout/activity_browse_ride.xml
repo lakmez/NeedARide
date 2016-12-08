@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffccffd3"
+    tools:context="com.ucm.cis.android.myproject.BrowseRideActivity">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/app_bar"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout2"
+        android:layout_marginTop="14dp">
+    <TextView
+        android:layout_width="220dp"
+        android:layout_height="38dp"
+        android:textSize="20sp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="All Rides Near You"
+        android:textStyle="bold"
+        android:id="@+id/userName"
+        android:layout_marginTop="14dp" />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nearestList"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/linearLayout2" />
+</RelativeLayout>

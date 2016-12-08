@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/MyNewStyle"
+    android:background="#ffffff"
+
+    tools:context=".MainActivity">
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_bar"
+        android:layout_marginTop="36dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="33dp"
+        android:id="@+id/tableLayout">
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_column="0">
+                <Button
+                    android:layout_width="147dp"
+                    android:layout_height="45dp"
+                    android:text="@string/offer"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    android:id="@+id/offerBtn"
+                    android:layout_marginTop="110dp"
+                    android:background="@drawable/red_button"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_column="1">
+
+                <Button
+                    android:layout_width="147dp"
+                    android:layout_height="45dp"
+                    android:text="@string/hitch"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    android:id="@+id/hitchBtn"
+                    android:background="@drawable/green_button"
+                    android:layout_gravity="bottom" />
+            </TableRow>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="60dp">
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_column="0">
+                <Button
+                    android:layout_width="147dp"
+                    android:layout_height="45dp"
+                    android:text="@string/request"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    android:background="@drawable/orange_button"
+                    android:id="@+id/requestBtn"
+                    />
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_column="1">
+
+                <Button
+                    android:layout_width="147dp"
+                    android:layout_height="45dp"
+                    android:text="@string/profile"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    android:id="@+id/profileBtn"
+                    android:background="@drawable/violet_button"
+                    />
+
+                <!--<Button
+                    android:layout_width="147dp"
+                    android:layout_height="fill_parent"
+                    android:text="@string/profile"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    android:background="@drawable/violet_button"
+                    android:id="@+id/profileBtn"
+
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="81dp" />-->
+            </TableRow>
+        </TableRow>
+    </TableLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff319dff"
+    tools:context="com.ucm.cis.android.myproject.RequestRideActivity">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_bar"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp">
+
+        <TextView
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:hint="Source"
+            android:text="Enter Your Details"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="275dp"
+            android:layout_height="38dp"
+            android:background="#ffffff"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:hint="First Name"
+            android:id="@+id/fname"
+            android:layout_marginTop="14dp" />
+
+        <EditText
+            android:layout_width="275dp"
+            android:layout_height="38dp"
+            android:background="#ffffff"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:hint="Last Name"
+            android:id="@+id/lname"
+            android:layout_marginTop="14dp" />
+
+        <EditText
+            android:layout_width="275dp"
+            android:layout_height="38dp"
+            android:background="#ffffff"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+
+            android:hint="Email "
+            android:id="@+id/emails"
+            android:layout_marginTop="14dp" />
+
+        <EditText
+            android:layout_width="275dp"
+            android:layout_height="38dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+
+            android:hint="700#"
+            android:background="#ffffff"
+            android:id="@+id/rollno"
+            android:layout_marginTop="14dp" />
+
+        <EditText
+            android:layout_width="275dp"
+            android:layout_height="38dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:hint="Phone No"
+            android:background="#ffffff"
+            android:id="@+id/phno"
+            android:layout_marginTop="14dp" />
+        <EditText
+            android:inputType="textPassword"
+            android:layout_width="275dp"
+            android:layout_height="38dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:hint="Password"
+            android:background="#ffffff"
+            android:id="@+id/pass"
+            android:layout_marginTop="14dp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:textAllCaps="false"
+        android:id="@+id/register"
+        android:textColor="#ff319dff"
+        android:textStyle="bold"
+        android:layout_below="@+id/linearLayout"
+        android:background="#ffe8ffb3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+</RelativeLayout>

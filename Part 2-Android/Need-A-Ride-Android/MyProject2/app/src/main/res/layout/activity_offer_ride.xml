@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ucm.cis.android.myproject.OfferRideActivity"
+    android:background="#ff6de355">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_bar"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp">
+
+        <TextView
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:hint="Source"
+            android:text="Enter Journey Details"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="275dp"
+            android:layout_height="38dp"
+            android:background="#ffffff"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:hint="Source"
+            android:id="@+id/source"
+            android:layout_marginTop="14dp" />
+
+        <EditText
+            android:layout_width="275dp"
+            android:layout_height="38dp"
+            android:background="#ffffff"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:hint="Destination"
+            android:id="@+id/dest"
+            android:layout_marginTop="14dp" />
+
+        <EditText
+            android:layout_width="275dp"
+            android:layout_height="38dp"
+            android:background="#ffffff"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:hint="Date"
+            android:id="@+id/date"
+            android:focusable="false"
+            android:layout_marginTop="14dp" />
+
+        <EditText
+            android:layout_width="275dp"
+            android:layout_height="38dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:focusable="false"
+            android:hint="Time in HH:MM"
+            android:background="#ffffff"
+            android:id="@+id/time"
+            android:layout_marginTop="14dp" />
+
+        <EditText
+            android:layout_width="275dp"
+            android:layout_height="38dp"
+            android:background="#ffffff"
+            android:inputType="number"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:hint="Number of Seats"
+            android:id="@+id/seats"
+            android:layout_marginTop="14dp" />
+<!--
+
+        <EditText
+            android:layout_width="275dp"
+            android:layout_height="38dp"
+            android:background="#ffffff"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:hint="Registration"
+            android:id="@+id/registration"
+            android:layout_marginTop="14dp" />
+
+        <EditText
+            android:layout_width="275dp"
+            android:layout_height="38dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:hint="UserName"
+            android:background="#ffffff"
+            android:id="@+id/userName"
+            android:layout_marginTop="14dp" />
+-->
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/offer"
+        android:textAllCaps="false"
+        android:id="@+id/offerRide"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+</RelativeLayout>
